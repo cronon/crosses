@@ -10,7 +10,7 @@ td {
   min-width: 30px;
   height: 30px; 
   position: relative;
-  font-size: 22px;
+  font: 22px sans-serif;
   text-align: center;
   padding: 0;
 }
