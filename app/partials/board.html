@@ -1,0 +1,14 @@
+<div>
+  <div class="now-playing">
+    Now playing: {{game.player()}}
+  </div>
+  <table class="board">
+    <tbody>
+      <tr ng-repeat="row in rows track by $index">
+        <td ng-repeat="cell in row track by $index" ng-class="cell.value" ng-click="cellClick(this)">
+          {{cell.value}}
+      </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
