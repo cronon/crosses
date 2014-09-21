@@ -19,7 +19,7 @@ angular.module('myApp.directives', []).
           pre: function(scope, elm, attrs){
             var w = parseInt(attrs.width);
             var h = parseInt(attrs.height);
-            scope.game = new Game(w, h, ["x", "o", "+"], onEnd);
+            scope.game = new Game(w, h, ["x", "o"], onEnd);
             scope.rows = scope.game.board.rows();
             document.addEventListener("keydown", function(e){
               if(e.ctrlKey && e.keyCode == 90){
